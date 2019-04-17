@@ -32,6 +32,7 @@ namespace DungeonCrawler
 
         private void Attack_Click(object sender, RoutedEventArgs e)
         {
+            HealthBar.Value = 50;
 
         }
 
