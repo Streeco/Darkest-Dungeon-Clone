@@ -13,28 +13,22 @@
         </Grid.Background>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="UpdateText" HorizontalAlignment="Left" Margin="10,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="325" Panel.ZIndex="1" FontFamily="Anatomia Free" Text="You woke up in a dungeon" Foreground="Black">
-            <TextBlock.Background>
-                <ImageBrush ImageSource="Photos/Parchment 0.5 (Fixed Sides).png"/>
-            </TextBlock.Background>
-        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="325" Panel.ZIndex="1" FontFamily="Anatomia Free" Text="You woke up in a dungeon" Foreground="Black"/>
         <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="27" Margin="757,10,0,0" Click="Button_Click_1" Panel.ZIndex="2">
             <Button.Background>
                 <ImageBrush ImageSource="Photos/Exit_Button.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="436" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" Source="Photos/Dungeon.png" Stretch="Fill"/>
-        <Button x:Name="Defend_Click" Content="Defend" HorizontalAlignment="Left" Margin="142,477,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold"/>
+        <Button Content="Defend" HorizontalAlignment="Left" Margin="136,477,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Defend_Click"/>
         <Button Content="Attack" HorizontalAlignment="Left" Margin="24,477,0,0" VerticalAlignment="Top" Width="75" Height="37" BorderBrush="#FF656565" Foreground="Black" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Bold" Click="Attack_Click"/>
-        <Button x:Name="Eat_Click" Content="Eat" HorizontalAlignment="Left" Margin="260,477,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold"/>
-        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,10,0,0" VerticalAlignment="Top" Width="100" Value="100" Maximum="99"/>
-        <Image HorizontalAlignment="Left" Height="21" Margin="6,4,0,0" VerticalAlignment="Top" Width="19" Source="Photos/Health_Cross.png" Stretch="Fill"/>
-        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="24,20,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFF2FF53" Value="100"/>
-        <Label Content="Health" HorizontalAlignment="Left" Margin="50,2,0,0" VerticalAlignment="Top"/>
-        <Label Content="Stamina" HorizontalAlignment="Left" Margin="46,11,0,0" VerticalAlignment="Top"/>
+        <Button Content="Eat" HorizontalAlignment="Left" Margin="251,477,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Eat_Click"/>
+        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,83,0,0" VerticalAlignment="Top" Width="100" Value="100" Maximum="99"/>
+        <Image HorizontalAlignment="Left" Height="21" Margin="10,72,0,0" VerticalAlignment="Top" Width="19" Source="Photos/Health_Cross.png" Stretch="Fill"/>
+        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="24,98,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFF2FF53" Value="100"/>
+        <Label Content="Health" HorizontalAlignment="Left" Margin="50,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="Stamina" HorizontalAlignment="Left" Margin="46,89,0,0" VerticalAlignment="Top"/>
         <Image HorizontalAlignment="Left" Height="209" Margin="395,451,0,0" VerticalAlignment="Top" Width="389"/>
-        <ProgressBar x:Name="HealthEnemy" HorizontalAlignment="Left" Height="10" Margin="602,10,0,0" VerticalAlignment="Top" Width="100" Value="3" Maximum="3"/>
-        <Label Content="Enemy" HorizontalAlignment="Left" Margin="630,2,0,0" VerticalAlignment="Top"/>
     </Grid>
 
 </Window>
