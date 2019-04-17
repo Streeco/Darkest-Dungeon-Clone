@@ -25,12 +25,12 @@ namespace DungeonCrawler
             InitializeComponent();
         }
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e) //Exit button
         {
             Environment.Exit(0);
         }
 
-        private void Eat_Click(object sender, RoutedEventArgs e)
+        private void Attack_Click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -40,7 +40,7 @@ namespace DungeonCrawler
 
         }
 
-        private void Attack_Click(object sender, RoutedEventArgs e)
+        private void Eat_Click(object sender, RoutedEventArgs e)
         {
 
         }
