@@ -20,6 +20,8 @@ namespace DungeonCrawler
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool nextTurn;
+        private string textLog = "You're attack was a success! Enemy took 1 dmg... \n Pathetic dmg but ok you have only just started";
         public MainWindow()
         {
             InitializeComponent();
@@ -32,18 +34,10 @@ namespace DungeonCrawler
 
         private void Attack_Click(object sender, RoutedEventArgs e)
         {
-            HealthBar.Value = 50;
-
+            HealthEnemy.Value -= 1;
+            //UpdateText.Text
         }
 
-        private void Defend_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Eat_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
     }
 }
