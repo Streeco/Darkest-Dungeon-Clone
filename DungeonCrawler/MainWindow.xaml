@@ -20,9 +20,9 @@
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="436" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" Source="Photos/Dungeon.png" Stretch="Fill"/>
-        <Button Content="Defend" HorizontalAlignment="Left" Margin="249,477,0,0" VerticalAlignment="Top" Width="141" Height="67" FontWeight="Bold"/>
-        <Button Content="Attack" HorizontalAlignment="Left" Margin="24,477,0,0" VerticalAlignment="Top" Width="141" Height="67" BorderBrush="#FF656565" Foreground="Black" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Bold"/>
-        <Button Content="Eat" HorizontalAlignment="Left" Margin="249,593,0,0" VerticalAlignment="Top" Width="141" Height="67" FontWeight="Bold"/>
+        <Button Content="Defend" HorizontalAlignment="Left" Margin="136,477,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold"/>
+        <Button Content="Attack" HorizontalAlignment="Left" Margin="24,477,0,0" VerticalAlignment="Top" Width="75" Height="37" BorderBrush="#FF656565" Foreground="Black" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Bold" Click="Button_Click"/>
+        <Button Content="Eat" HorizontalAlignment="Left" Margin="251,477,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold"/>
         <ProgressBar HorizontalAlignment="Left" Height="10" Margin="24,83,0,0" VerticalAlignment="Top" Width="100" Value="100" Maximum="99"/>
         <Image HorizontalAlignment="Left" Height="21" Margin="10,72,0,0" VerticalAlignment="Top" Width="19" Source="Photos/Health_Cross.png" Stretch="Fill"/>
         <ProgressBar HorizontalAlignment="Left" Height="10" Margin="24,98,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFF2FF53" Value="100"/>
