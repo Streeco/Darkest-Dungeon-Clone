@@ -25,12 +25,22 @@ namespace DungeonCrawler
             InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Eat_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Defend_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Attack_Click(object sender, RoutedEventArgs e)
         {
 
         }
