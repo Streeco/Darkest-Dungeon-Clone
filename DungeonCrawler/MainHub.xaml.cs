@@ -20,15 +20,16 @@ namespace DungeonCrawler
     /// </summary>
     public partial class MainHub : Page
     {
-        public static int currency;
+        public static int currency = 100;
+        public static int potion;
 
         public MainHub()
         {
             InitializeComponent();
             HealthBar.Value = MainWindow.health;
-            HealthBar.Value = 20;
 
             Currency.Content = "Gold: " + currency.ToString();
+            PotionCounter.Content = "X " + potion.ToString();
         }
 
         private void HealthBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -48,7 +49,7 @@ namespace DungeonCrawler
 
         private void Shop_Click(object sender, RoutedEventArgs e)
         {
-            ShopWindow.Visibility = Visibility.Visible;
+            ShowShop();
         }
 
         private void MoveOut_Click(object sender, RoutedEventArgs e)
@@ -58,7 +59,38 @@ namespace DungeonCrawler
 
         private void ExitShop_Click(object sender, RoutedEventArgs e)
         {
-            ShopWindow.Visibility = Visibility.Hidden;
+            HideShop();
         }
+
+        private void BuyPotion_Click(object sender, RoutedEventArgs e)
+        {
+            if (currency >= 20)
+            {
+                potion++;
+                currency -= 20;
+                PotionCounter.Content = "X " + potion.ToString();
+                Currency.Content = "Gold: " + currency.ToString();
+            }
+            
+        }
+
+        //Show shop window
+        private void ShowShop()
+        {
+            ShopWindow.Visibility = Visibility.Visible;
+            ExitShop.Visibility = Visibility.Visible;
+            BuyPotion.Visibility = Visibility.Visible;
+            BuyPotionText.Visibility = Visibility.Visible;
+        }
+
+        //Hide shop window
+        private void HideShop()
+        {
+            ShopWindow.Visibility = Visibility.Hidden;
+            ExitShop.Visibility = Visibility.Hidden;
+            BuyPotion.Visibility = Visibility.Hidden;
+            BuyPotionText.Visibility = Visibility.Hidden;
+        }
+
     }
 }
