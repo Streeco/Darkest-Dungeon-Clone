@@ -23,9 +23,9 @@
         <Button Content="Defend" HorizontalAlignment="Left" Margin="136,477,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Defend_Click"/>
         <Button Content="Attack" HorizontalAlignment="Left" Margin="24,477,0,0" VerticalAlignment="Top" Width="75" Height="37" BorderBrush="#FF656565" Foreground="Black" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Bold" Click="Attack_Click"/>
         <Button Content="Eat" HorizontalAlignment="Left" Margin="251,477,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Eat_Click"/>
-        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,83,0,0" VerticalAlignment="Top" Width="100" Value="100" Maximum="99"/>
+        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,83,0,0" VerticalAlignment="Top" Width="100" Value="100" Maximum="99" ValueChanged="HealthBar_ValueChanged"/>
         <Image HorizontalAlignment="Left" Height="21" Margin="10,72,0,0" VerticalAlignment="Top" Width="19" Source="Photos/Health_Cross.png" Stretch="Fill"/>
-        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="24,98,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFF2FF53" Value="100"/>
+        <ProgressBar x:Name="StaminaBar" HorizontalAlignment="Left" Height="10" Margin="24,98,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFF2FF53" Value="100" ValueChanged="StaminaBar_ValueChanged"/>
         <Label Content="Health" HorizontalAlignment="Left" Margin="50,74,0,0" VerticalAlignment="Top"/>
         <Label Content="Stamina" HorizontalAlignment="Left" Margin="46,89,0,0" VerticalAlignment="Top"/>
         <Image HorizontalAlignment="Left" Height="209" Margin="395,451,0,0" VerticalAlignment="Top" Width="389"/>

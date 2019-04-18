@@ -20,9 +20,18 @@ namespace DungeonCrawler
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static double health;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            health = HealthBar.Value;            
+
+            //Make game start in the mainhub page
+            MainHub mh = new MainHub();
+            this.Content = mh;
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //Exit button
@@ -32,8 +41,7 @@ namespace DungeonCrawler
 
         private void Attack_Click(object sender, RoutedEventArgs e)
         {
-            HealthBar.Value = 50;
-
+            
         }
 
         private void Defend_Click(object sender, RoutedEventArgs e)
@@ -42,6 +50,16 @@ namespace DungeonCrawler
         }
 
         private void Eat_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HealthBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
+
+        private void StaminaBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
 
         }

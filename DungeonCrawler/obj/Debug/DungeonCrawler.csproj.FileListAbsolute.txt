@@ -28,3 +28,7 @@ D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\Dungeon
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.CoreCompileInputs.cache
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.exe
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.pdb
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.g.cs
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.baml
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.g.cs
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.baml
