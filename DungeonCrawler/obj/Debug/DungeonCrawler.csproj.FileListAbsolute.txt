@@ -47,7 +47,22 @@ D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.baml
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.g.cs
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.baml
-C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.g.cs
-C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.g.cs
-C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.baml
-C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.baml
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\DungeonCrawler.exe.config
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\DungeonCrawler.exe
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\DungeonCrawler.pdb
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csprojAssemblyReference.cache
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.g.cs
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainWindow.g.cs
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.g.cs
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\App.g.cs
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler_MarkupCompile.cache
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler_MarkupCompile.lref
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.baml
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainWindow.baml
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.baml
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.g.resources
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.Properties.Resources.resources
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.GenerateResource.cache
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.exe
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.pdb
