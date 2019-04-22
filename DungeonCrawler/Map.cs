@@ -36,7 +36,7 @@ namespace DungeonCrawler
                     direction = (int)MOVINGDIRECTION.TORIGHT;
                 break;
         }
-        previousDirection = direction;
+        previousDirection = direction; 
 
     }
     
