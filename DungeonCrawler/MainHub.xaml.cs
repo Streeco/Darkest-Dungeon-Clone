@@ -52,9 +52,9 @@ namespace DungeonCrawler
             ShowShop();
         }
 
-        private void MoveOut_Click(object sender, RoutedEventArgs e)
+        private void MoveOut_Click(object sender, RoutedEventArgs e) //When clicked move into dungeon "MainWindow.xaml"
         {
-
+            
         }
 
         private void ExitShop_Click(object sender, RoutedEventArgs e)
