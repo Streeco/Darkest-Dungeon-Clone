@@ -21,6 +21,7 @@ namespace DungeonCrawler
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static double health;
         public int turnCount = 1;
         public int oneTurn = 1;
         public int resetTurn = 0;
@@ -106,12 +107,7 @@ namespace DungeonCrawler
 
         private void HealthBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-
-        }
-
-        private void StaminaBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-
+            health = HealthBar.Value;
         }
     }
 }

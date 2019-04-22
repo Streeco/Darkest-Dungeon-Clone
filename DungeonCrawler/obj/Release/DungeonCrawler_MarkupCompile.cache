@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\
+C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Release\
 DungeonCrawler
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\App.xaml
 31674411532
 
@@ -16,5 +16,5 @@ C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawle
 131569487696
 MainHub.xaml;MainWindow.xaml;ShopWindow.xaml;
 
-False
+True
 
