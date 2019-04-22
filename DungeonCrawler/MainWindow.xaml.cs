@@ -15,11 +15,23 @@ using System.Windows.Shapes;
 
 namespace DungeonCrawler
 {
+   
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int turnCount = 1;
+        public int oneTurn = 1;
+        public int resetTurn = 0;
+        public bool isDefending = false;
+        public int enemyDmg = 10;
+        public int playerDmg = 1;
+        public double defensValue = 0;
+        private string combatLog = "You dealt 1 dmg. Wauv you must feel good about yourself about now, huh.\n";
+        private string defenseFailLog = "You tried to defend but failed. \n";
+        private string exhaustionLog = "You are too exhausted (Too low stamina to do anything) \n)";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,20 +42,59 @@ namespace DungeonCrawler
             Environment.Exit(0);
         }
 
-        private void Attack_Click(object sender, RoutedEventArgs e)
+        public void Attack_Click(object sender, RoutedEventArgs e) //Attack button
         {
-            HealthBar.Value = 50;
-
+            if (StaminaBar.Value > 0)
+            {
+                EnemyHealth1.Value -= playerDmg;
+                StaminaBar.Value -= 10;
+                TextBox.Text = combatLog;
+                turnCount += oneTurn;
+            }
+            else
+            {
+                TextBox.Text = exhaustionLog;
+            }
         }
 
         private void Defend_Click(object sender, RoutedEventArgs e)
         {
-
+            if (turnCount == 1)
+            {
+                isDefending = true;
+                defensValue = 0.25;
+                turnCount += oneTurn;
+            }
+            else
+            {
+                TextBox.Text = defenseFailLog;
+            }
         }
 
         private void Eat_Click(object sender, RoutedEventArgs e)
         {
+            if (StaminaBar.Value < 100)
+            {
+                StaminaBar.Value += 10;
+                turnCount += oneTurn;
+            }
+        }
 
+        private void EnemyHealth1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (isDefending == true && turnCount == 2)
+            {
+                HealthBar.Value -= enemyDmg * defensValue;
+                isDefending = false;
+                turnCount = resetTurn;
+            }
+
+            if (turnCount == 2 && isDefending == false)
+            {
+                HealthBar.Value -= enemyDmg;
+                turnCount = resetTurn;
+            }
+            
         }
     }
 }

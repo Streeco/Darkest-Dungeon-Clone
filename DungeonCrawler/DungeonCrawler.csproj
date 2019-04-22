@@ -92,7 +92,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Photos\Dungeon.png">
@@ -113,6 +115,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Photos\Health_Cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photos\Parchment 0.5 %28Fixed Sides%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photos\Potion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photos\UI Frame %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
