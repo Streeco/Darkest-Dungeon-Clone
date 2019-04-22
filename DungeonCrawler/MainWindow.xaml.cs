@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace DungeonCrawler
 {
-   
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -35,6 +35,13 @@ namespace DungeonCrawler
         public MainWindow()
         {
             InitializeComponent();
+
+            health = HealthBar.Value;
+
+            //Make game start in the mainhub page
+            MainHub mh = new MainHub();
+            this.Content = mh;
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //Exit button
@@ -94,7 +101,17 @@ namespace DungeonCrawler
                 HealthBar.Value -= enemyDmg;
                 turnCount = resetTurn;
             }
-            
+
+        }
+
+        private void HealthBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
+
+        private void StaminaBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
         }
     }
 }
