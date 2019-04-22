@@ -64,28 +64,5 @@ namespace DungeonCrawler
 
         }
     }
-    rivate void OnButtonKeyDown(object sender, KeyEventArgs e)
-    {
-        switch (e.Key)
-        {
-            case Key.Down:
-                if (previousDirection != (int)MOVINGDIRECTION.UPWARDS)
-                    direction = (int)MOVINGDIRECTION.DOWNWARDS;
-                break;
-            case Key.Up:
-                if (previousDirection != (int)MOVINGDIRECTION.DOWNWARDS)
-                    direction = (int)MOVINGDIRECTION.UPWARDS;
-                break;
-            case Key.Left:
-                if (previousDirection != (int)MOVINGDIRECTION.TORIGHT)
-                    direction = (int)MOVINGDIRECTION.TOLEFT;
-                break;
-            case Key.Right:
-                if (previousDirection != (int)MOVINGDIRECTION.TOLEFT)
-                    direction = (int)MOVINGDIRECTION.TORIGHT;
-                break;
-        }
-        previousDirection = direction;
-
-    }
+   
 }
