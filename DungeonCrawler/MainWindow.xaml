@@ -8,15 +8,6 @@
         ResizeMode="NoResize"
         Title="MainWindow" Height="700" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Canvas Name="paintCanvas" Background="White"
-
-                Grid.Column="1" HorizontalAlignment="Stretch" MaxWidth="642" MaxHeight="422">
-            
-        </Canvas>
         <Grid.Background>
             <ImageBrush ImageSource="Photos/Background.jpg"/>
         </Grid.Background>
