@@ -22,6 +22,7 @@ namespace DungeonCrawler
     {
         public static int currency = 100;
         public static int potion;
+        
 
         public MainHub()
         {
@@ -55,6 +56,8 @@ namespace DungeonCrawler
         private void MoveOut_Click(object sender, RoutedEventArgs e) //When clicked move into dungeon "MainWindow.xaml"
         {
             
+            
+
         }
 
         private void ExitShop_Click(object sender, RoutedEventArgs e)

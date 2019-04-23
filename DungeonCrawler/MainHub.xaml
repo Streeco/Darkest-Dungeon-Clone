@@ -6,6 +6,7 @@
       xmlns:local="clr-namespace:DungeonCrawler"
       mc:Ignorable="d" d:DesignWidth="800"
       Title="MainHub" Height="701.15">
+    
 
     <Grid>
         <Image HorizontalAlignment="Left" Height="713" Margin="-1,-9,0,-3.2" VerticalAlignment="Top" Width="801" Source="Photos/DarkValley.jpg" Stretch="Fill"/>
@@ -25,3 +26,5 @@
         <Label x:Name="BuyPotionText" Content="(20 Gold)" HorizontalAlignment="Left" Margin="330,269,0,0" VerticalAlignment="Top" Foreground="White" Visibility="Hidden"/>
     </Grid>
 </Page>
+    
+

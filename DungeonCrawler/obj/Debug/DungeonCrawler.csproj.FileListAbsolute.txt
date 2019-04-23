@@ -51,3 +51,5 @@ C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawle
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.g.cs
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.baml
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.baml
+C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\UC.g.cs
+C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\UC.baml
