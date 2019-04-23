@@ -72,3 +72,4 @@ C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\
 C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.CoreCompileInputs.cache
 C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.exe
 C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.pdb
+C:\Users\Bruger\Documents\GitHub\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\UC.g.cs

@@ -8,14 +8,11 @@
         ResizeMode="NoResize"
         Title="MainWindow" Height="700" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+
         <Canvas Name="paintCanvas" Background="White"
 
                 Grid.Column="1" HorizontalAlignment="Stretch" MaxWidth="642" MaxHeight="422">
-            
+
         </Canvas>
         <Grid.Background>
             <ImageBrush ImageSource="Photos/Background.jpg"/>
@@ -45,6 +42,9 @@
         <Label x:Name="Skeleton_Text" Content="Skeleton" HorizontalAlignment="Left" Margin="653,0,0,0" VerticalAlignment="Top" Height="27" Panel.ZIndex="1"/>
         <ProgressBar x:Name="EnemyHealth1" HorizontalAlignment="Left" Height="10" Margin="629,10,0,0" VerticalAlignment="Top" Width="100" Value="9" Maximum="9" ValueChanged="EnemyHealth1_ValueChanged"/>
         <Image HorizontalAlignment="Left" Height="229" VerticalAlignment="Top" Width="395" Margin="0,442,0,-4.6" Source="Photos/UI Frame (1).png" Stretch="Fill"/>
+
+        <Image HorizontalAlignment="Left" Height="147" VerticalAlignment="Top" Width="236" Margin="548,446,0,0" Source="Photos/Map/Page3.JPG" Stretch="Fill"/>
+
         <Label Content="Command Panel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,457,0,0" Width="285" FontWeight="Bold" FontStyle="Italic" FontSize="20" HorizontalContentAlignment="Center">
             <Label.Effect>
                 <DropShadowEffect/>
