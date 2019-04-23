@@ -27,7 +27,6 @@
         <Button Content="Shop" HorizontalAlignment="Left" Margin="229,365,0,0" VerticalAlignment="Top" Width="44" Click="Shop_Click" Background="#FF4F4F4F" Foreground="White"/>
         <Button Content="Eat" HorizontalAlignment="Left" Margin="306,250,0,0" VerticalAlignment="Top" Width="32" Click="Eat_Click" Background="#FF4F4F4F" Foreground="White"/>
         <Button Content="Move Out" HorizontalAlignment="Left" Margin="483,350,0,330.8" VerticalAlignment="Center" Width="75" Click="Move_Out_Click" Background="#FF4F4F4F" Foreground="White"/>
-        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,17,0,0" VerticalAlignment="Top" Width="100" Value="100" Maximum="99" ValueChanged="HealthBar_ValueChanged"/>
         <Label Content="Health" HorizontalAlignment="Left" Margin="50,8,0,0" VerticalAlignment="Top"/>
         <Label Content="Stamina" HorizontalAlignment="Left" Margin="46,23,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Currency" Content="Money Counter" HorizontalAlignment="Left" Margin="25,55,0,0" VerticalAlignment="Top" Width="99" Background="{x:Null}" Foreground="White"/>
@@ -41,7 +40,7 @@
         <Button x:Name="Defend" Content="Defend" HorizontalAlignment="Left" Margin="165,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Defend_Click" Panel.ZIndex="1" Visibility="Hidden"/>
         <Button x:Name="Attack" Content="Attack" HorizontalAlignment="Left" Margin="46,554,0,0" VerticalAlignment="Top" Width="75" Height="37" BorderBrush="#FF656565" Foreground="Black" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Bold" Click="Attack_Click" Panel.ZIndex="1" Visibility="Hidden"/>
         <Button x:Name="Spells" Content="Spells" HorizontalAlignment="Left" Margin="283,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Eat_Click" Panel.ZIndex="1" Visibility="Hidden"/>
-        <ProgressBar x:Name="HealthBar_Dungeon" HorizontalAlignment="Left" Height="10" Margin="24,10,0,0" VerticalAlignment="Top" Width="100" Value="101" ValueChanged="HealthBar_ValueChanged"/>
+        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,8,0,0" VerticalAlignment="Top" Width="100" Value="101" ValueChanged="HealthBar_ValueChanged"/>
         <Image x:Name="Health_Cross" HorizontalAlignment="Left" Height="21" Margin="9,4,0,0" VerticalAlignment="Top" Width="19" Source="Photos/Health_Cross.png" Stretch="Fill" RenderTransformOrigin="0.116,1.21"/>
         <Label x:Name="Health_Text" Content="Health" HorizontalAlignment="Left" Margin="50,01,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Magic_Text" Content="Mana" HorizontalAlignment="Left" Margin="50,11,0,0" VerticalAlignment="Top" Panel.ZIndex="1" Height="25" Width="40"/>
