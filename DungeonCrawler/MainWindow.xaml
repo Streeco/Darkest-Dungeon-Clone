@@ -13,30 +13,44 @@
         </Grid.Background>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="TextBox" HorizontalAlignment="Left" Margin="10,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="325" Panel.ZIndex="1" FontFamily="Gabriola" Foreground="Black" FontSize="18">
+        <TextBlock x:Name="TextBox" HorizontalAlignment="Left" Margin="10,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="325" Panel.ZIndex="1" FontFamily="Gabriola" Foreground="Black" FontSize="18" Visibility="Hidden">
             <TextBlock.Background>
                 <ImageBrush ImageSource="Photos/Parchment 0.5 (Fixed Sides).png"/>
             </TextBlock.Background>
         </TextBlock>
-        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="27" Margin="757,10,0,0" Click="Button_Click_1" Panel.ZIndex="2">
+        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="27" Margin="757,10,0,0" Click="Button_Click_1" Panel.ZIndex="2" Visibility="Hidden">
             <Button.Background>
                 <ImageBrush ImageSource="Photos/Exit_Button.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Image x:Name="EnemyHealth" HorizontalAlignment="Left" Height="436" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" Source="Photos/Dungeon.png" Stretch="Fill"/>
-        <Button Content="Defend" HorizontalAlignment="Left" Margin="165,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Defend_Click" Panel.ZIndex="1"/>
-        <Button Content="Attack" HorizontalAlignment="Left" Margin="46,554,0,0" VerticalAlignment="Top" Width="75" Height="37" BorderBrush="#FF656565" Foreground="Black" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Bold" Click="Attack_Click" Panel.ZIndex="1"/>
-        <Button Content="Eat" HorizontalAlignment="Left" Margin="283,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Eat_Click" Panel.ZIndex="1"/>
-        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,10,0,0" VerticalAlignment="Top" Width="100" Value="101" ValueChanged="HealthBar_ValueChanged"/>
-        <Image HorizontalAlignment="Left" Height="21" Margin="9,4,0,0" VerticalAlignment="Top" Width="19" Source="Photos/Health_Cross.png" Stretch="Fill" RenderTransformOrigin="0.116,1.21"/>
-        <ProgressBar x:Name="StaminaBar" HorizontalAlignment="Left" Height="10" Margin="24,20,0,0" VerticalAlignment="Top" Width="100" Foreground="#FFF2FF53" Value="100"/>
-        <Label Content="Health" HorizontalAlignment="Left" Margin="50,01,0,0" VerticalAlignment="Top"/>
-        <Label Content="Stamina" HorizontalAlignment="Left" Margin="46,12,0,0" VerticalAlignment="Top"/>
-        <Image HorizontalAlignment="Left" Height="209" Margin="395,451,0,0" VerticalAlignment="Top" Width="389"/>
-        <Label x:Name="Skeleton_Text" Content="Skeleton" HorizontalAlignment="Left" Margin="653,0,0,0" VerticalAlignment="Top" Height="27" Panel.ZIndex="1"/>
-        <ProgressBar x:Name="EnemyHealth1" HorizontalAlignment="Left" Height="10" Margin="629,10,0,0" VerticalAlignment="Top" Width="100" Value="9" Maximum="9" ValueChanged="EnemyHealth1_ValueChanged"/>
-        <Image HorizontalAlignment="Left" Height="229" VerticalAlignment="Top" Width="395" Margin="0,442,0,-4.6" Source="Photos/UI Frame (1).png" Stretch="Fill"/>
-        <Label Content="Command Panel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,457,0,0" Width="285" FontWeight="Bold" FontStyle="Italic" FontSize="20" HorizontalContentAlignment="Center">
+        <Image x:Name="Hub_Background" HorizontalAlignment="Left" Height="713" Margin="-1,-9,0,-3.2" VerticalAlignment="Top" Width="801" Source="Photos/DarkValley.jpg" Stretch="Fill"/>
+        <Button Content="Shop" HorizontalAlignment="Left" Margin="229,365,0,0" VerticalAlignment="Top" Width="44" Click="Shop_Click" Background="#FF4F4F4F" Foreground="White"/>
+        <Button Content="Eat" HorizontalAlignment="Left" Margin="306,250,0,0" VerticalAlignment="Top" Width="32" Click="Eat_Click" Background="#FF4F4F4F" Foreground="White"/>
+        <Button Content="Move Out" HorizontalAlignment="Left" Margin="483,350,0,330.8" VerticalAlignment="Center" Width="75" Click="Move_Out_Click" Background="#FF4F4F4F" Foreground="White"/>
+        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,17,0,0" VerticalAlignment="Top" Width="100" Value="100" Maximum="99" ValueChanged="HealthBar_ValueChanged"/>
+        <Label Content="Health" HorizontalAlignment="Left" Margin="50,8,0,0" VerticalAlignment="Top"/>
+        <Label Content="Stamina" HorizontalAlignment="Left" Margin="46,23,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Currency" Content="Money Counter" HorizontalAlignment="Left" Margin="25,55,0,0" VerticalAlignment="Top" Width="99" Background="{x:Null}" Foreground="White"/>
+        <Rectangle x:Name="ShopWindow" HorizontalAlignment="Left" Height="329" Margin="148,135,0,0" VerticalAlignment="Top" Width="446" Stroke="Black" Fill="#FF454545" Visibility="Hidden"/>
+        <Button x:Name="ExitShop" Content="Button" HorizontalAlignment="Left" Margin="566,143,0,0" VerticalAlignment="Top" Width="18" Foreground="{x:Null}" BorderBrush="Black" Background="Red" Height="16" Click="ExitShop_Click" Visibility="Hidden"/>
+        <Image x:Name="Potion" HorizontalAlignment="Left" Height="23" Margin="136,17,0,0" VerticalAlignment="Top" Width="23" Source="Photos/Potion.png" OpacityMask="Black"/>
+        <Label x:Name="PotionCounter" Content="Potion Counter" HorizontalAlignment="Left" Margin="159,17,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="BuyPotion" Content="Buy Potion" HorizontalAlignment="Left" Margin="323,250,0,0" VerticalAlignment="Top" Width="75" Click="BuyPotion_Click" Visibility="Hidden"/>
+        <Label x:Name="BuyPotionText" Content="(20 Gold)" HorizontalAlignment="Left" Margin="330,269,0,0" VerticalAlignment="Top" Foreground="White" Visibility="Hidden"/>
+        <Image x:Name="Dungeon_Picture" HorizontalAlignment="Left" Height="436" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" Source="Photos/Dungeon.png" Stretch="Fill" Visibility="Hidden"/>
+        <Button x:Name="Defend" Content="Defend" HorizontalAlignment="Left" Margin="165,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Defend_Click" Panel.ZIndex="1" Visibility="Hidden"/>
+        <Button x:Name="Attack" Content="Attack" HorizontalAlignment="Left" Margin="46,554,0,0" VerticalAlignment="Top" Width="75" Height="37" BorderBrush="#FF656565" Foreground="Black" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Bold" Click="Attack_Click" Panel.ZIndex="1" Visibility="Hidden"/>
+        <Button x:Name="Spells" Content="Spells" HorizontalAlignment="Left" Margin="283,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Eat_Click" Panel.ZIndex="1" Visibility="Hidden"/>
+        <ProgressBar x:Name="HealthBar_Dungeon" HorizontalAlignment="Left" Height="10" Margin="24,10,0,0" VerticalAlignment="Top" Width="100" Value="101" ValueChanged="HealthBar_ValueChanged"/>
+        <Image x:Name="Health_Cross" HorizontalAlignment="Left" Height="21" Margin="9,4,0,0" VerticalAlignment="Top" Width="19" Source="Photos/Health_Cross.png" Stretch="Fill" RenderTransformOrigin="0.116,1.21"/>
+        <Label x:Name="Health_Text" Content="Health" HorizontalAlignment="Left" Margin="50,01,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Magic_Text" Content="Mana" HorizontalAlignment="Left" Margin="50,11,0,0" VerticalAlignment="Top" Panel.ZIndex="1" Height="25" Width="40"/>
+        <Image HorizontalAlignment="Left" Height="209" Margin="395,451,0,0" VerticalAlignment="Top" Width="389" Grid.Column="123"/>
+        <Label x:Name="Skeleton_Text" Content="Skeleton" HorizontalAlignment="Left" Margin="653,0,0,0" VerticalAlignment="Top" Height="27" Panel.ZIndex="1" Visibility="Hidden"/>
+        <ProgressBar x:Name="EnemyHealth1" HorizontalAlignment="Left" Height="10" Margin="629,10,0,0" VerticalAlignment="Top" Width="100" Value="9" Maximum="9" ValueChanged="EnemyHealth1_ValueChanged" Visibility="Hidden"/>
+        <Image x:Name="UI_Frame" HorizontalAlignment="Left" Height="229" VerticalAlignment="Top" Width="395" Margin="0,442,0,-4.6" Source="Photos/UI Frame (1).png" Stretch="Fill" Visibility="Hidden"/>
+        <Label x:Name="UI_Text" Content="Command Panel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,457,0,0" Width="285" FontWeight="Bold" FontStyle="Italic" FontSize="20" HorizontalContentAlignment="Center" Visibility="Hidden">
+
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>
@@ -47,6 +61,8 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
+        <ProgressBar x:Name="MagicBar_Dungeon" HorizontalAlignment="Left" Height="10" Margin="24,19,0,0" VerticalAlignment="Top" Width="100" Background="#FF1747B7"/>
+        <Button x:Name="Move_Out" Content="Move Out" HorizontalAlignment="Left" Margin="463,330,0,0" VerticalAlignment="Top" Width="60" Foreground="White" Background="#FF4B4545" Click="Move_Out_Click"/>
     </Grid>
 
 </Window>

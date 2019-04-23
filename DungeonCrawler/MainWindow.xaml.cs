@@ -21,6 +21,7 @@ namespace DungeonCrawler
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Dungeon(Combat)
         public static double health;
         public int turnCount = 1;
         public int oneTurn = 1;
@@ -32,37 +33,29 @@ namespace DungeonCrawler
         private string combatLog = "You dealt 1 dmg. Wauv you must feel good about yourself about now, huh.\n";
         private string defenseFailLog = "You tried to defend but failed. \n";
         private string exhaustionLog = "You are too exhausted (Too low stamina to do anything) \n)";
+        // Hub
+        public static int currency = 100;
+        public static int potion;
 
         public MainWindow()
         {
             InitializeComponent();
-
-            health = HealthBar.Value;
-
-            //Make game start in the mainhub page
-            MainHub mh = new MainHub();
-            this.Content = mh;
-
+            
+            Currency.Content = "Gold: " + currency.ToString();
+            PotionCounter.Content = "X " + potion.ToString();
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e) //Exit button
         {
-            Environment.Exit(0);
+            Close_Dungeon();
         }
 
         public void Attack_Click(object sender, RoutedEventArgs e) //Attack button
         {
-            if (StaminaBar.Value > 0)
-            {
-                EnemyHealth1.Value -= playerDmg;
-                StaminaBar.Value -= 10;
-                TextBox.Text = combatLog;
-                turnCount += oneTurn;
-            }
-            else
-            {
-                TextBox.Text = exhaustionLog;
-            }
+           EnemyHealth1.Value -= playerDmg;
+           TextBox.Text = combatLog;
+           turnCount += oneTurn;
         }
 
         private void Defend_Click(object sender, RoutedEventArgs e)
@@ -76,15 +69,6 @@ namespace DungeonCrawler
             else
             {
                 TextBox.Text = defenseFailLog;
-            }
-        }
-
-        private void Eat_Click(object sender, RoutedEventArgs e)
-        {
-            if (StaminaBar.Value < 100)
-            {
-                StaminaBar.Value += 10;
-                turnCount += oneTurn;
             }
         }
 
@@ -108,6 +92,93 @@ namespace DungeonCrawler
         private void HealthBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             health = HealthBar.Value;
+        }
+
+        private void Close_Dungeon()
+        {
+            EnemyHealth1.Visibility = Visibility.Hidden;
+            TextBox.Visibility = Visibility.Hidden;
+            ExitButton.Visibility = Visibility.Hidden;
+            Attack.Visibility = Visibility.Hidden;
+            Defend.Visibility = Visibility.Hidden;
+            Spells.Visibility = Visibility.Hidden;
+            Dungeon_Picture.Visibility = Visibility.Hidden;
+            UI_Frame.Visibility = Visibility.Hidden;
+            UI_Text.Visibility = Visibility.Hidden;
+            Skeleton_Text.Visibility = Visibility.Hidden;
+            Move_Out.Visibility = Visibility.Visible;
+
+
+        }
+
+        private void GoIntoDungeon()
+        {
+            EnemyHealth1.Visibility = Visibility.Visible;
+            TextBox.Visibility = Visibility.Visible;
+            ExitButton.Visibility = Visibility.Visible;
+            Attack.Visibility = Visibility.Visible;
+            Defend.Visibility = Visibility.Visible;
+            Spells.Visibility = Visibility.Visible;
+            Dungeon_Picture.Visibility = Visibility.Visible;
+            UI_Frame.Visibility = Visibility.Visible;
+            UI_Text.Visibility = Visibility.Visible;
+            Skeleton_Text.Visibility = Visibility.Visible;
+            Move_Out.Visibility = Visibility.Hidden;
+
+        }
+        //------------------------------------------------------------------------------Hub--------------------------------------------------------------------\\
+        private void Eat_Click(object sender, RoutedEventArgs e)
+        {
+            HealthBar.Value += 20;
+        }
+
+        private void Shop_Click(object sender, RoutedEventArgs e)
+        {
+            ShowShop();
+        }
+
+        private void ExitShop_Click(object sender, RoutedEventArgs e)
+        {
+            HideShop();
+        }
+
+        private void BuyPotion_Click(object sender, RoutedEventArgs e)
+        {
+            if (currency >= 20)
+            {
+                potion++;
+                currency -= 20;
+                PotionCounter.Content = "X " + potion.ToString();
+                Currency.Content = "Gold: " + currency.ToString();
+                
+            }
+
+        }
+
+        //Show shop window
+        private void ShowShop()
+        {
+            ShopWindow.Visibility = Visibility.Visible;
+            ExitShop.Visibility = Visibility.Visible;
+            BuyPotion.Visibility = Visibility.Visible;
+            BuyPotionText.Visibility = Visibility.Visible;
+            Move_Out.Visibility = Visibility.Hidden;
+
+        }
+
+        //Hide shop window
+        private void HideShop()
+        {
+            ShopWindow.Visibility = Visibility.Hidden;
+            ExitShop.Visibility = Visibility.Hidden;
+            BuyPotion.Visibility = Visibility.Hidden;
+            BuyPotionText.Visibility = Visibility.Hidden;
+            Move_Out.Visibility = Visibility.Visible;
+        }
+
+        private void Move_Out_Click(object sender, RoutedEventArgs e)
+        {
+            GoIntoDungeon();
         }
     }
 }
