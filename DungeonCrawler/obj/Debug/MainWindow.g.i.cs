@@ -139,7 +139,7 @@ namespace DungeonCrawler {
         
         #line 41 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image Map;
+        internal System.Windows.Controls.Button Defend;
         
         #line default
         #line hidden
@@ -147,7 +147,7 @@ namespace DungeonCrawler {
         
         #line 42 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button Defend;
+        internal System.Windows.Controls.Button Attack;
         
         #line default
         #line hidden
@@ -155,7 +155,7 @@ namespace DungeonCrawler {
         
         #line 43 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button Attack;
+        internal System.Windows.Controls.Button Spells;
         
         #line default
         #line hidden
@@ -163,7 +163,7 @@ namespace DungeonCrawler {
         
         #line 44 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button Spells;
+        internal System.Windows.Controls.ProgressBar HealthBar_Dungeon;
         
         #line default
         #line hidden
@@ -171,7 +171,7 @@ namespace DungeonCrawler {
         
         #line 45 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ProgressBar HealthBar_Dungeon;
+        internal System.Windows.Controls.Image Health_Cross;
         
         #line default
         #line hidden
@@ -179,7 +179,7 @@ namespace DungeonCrawler {
         
         #line 46 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image Health_Cross;
+        internal System.Windows.Controls.Label Health_Text;
         
         #line default
         #line hidden
@@ -201,7 +201,7 @@ namespace DungeonCrawler {
         #line hidden
         
         
-        #line 50 "..\..\MainWindow.xaml"
+        #line 49 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label Skeleton_Text;
         
@@ -209,7 +209,7 @@ namespace DungeonCrawler {
         #line hidden
         
         
-        #line 51 "..\..\MainWindow.xaml"
+        #line 50 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ProgressBar EnemyHealth1;
         
@@ -217,7 +217,7 @@ namespace DungeonCrawler {
         #line hidden
         
         
-        #line 52 "..\..\MainWindow.xaml"
+        #line 51 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image UI_Frame;
         
@@ -225,7 +225,7 @@ namespace DungeonCrawler {
         #line hidden
         
         
-        #line 53 "..\..\MainWindow.xaml"
+        #line 52 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Label UI_Text;
         
@@ -233,7 +233,7 @@ namespace DungeonCrawler {
         #line hidden
         
         
-        #line 65 "..\..\MainWindow.xaml"
+        #line 64 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ProgressBar MagicBar_Dungeon;
         
@@ -241,7 +241,7 @@ namespace DungeonCrawler {
         #line hidden
         
         
-        #line 66 "..\..\MainWindow.xaml"
+        #line 65 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Move_Out;
         
@@ -368,7 +368,7 @@ namespace DungeonCrawler {
             case 17:
             this.Defend = ((System.Windows.Controls.Button)(target));
             
-            #line 42 "..\..\MainWindow.xaml"
+            #line 41 "..\..\MainWindow.xaml"
             this.Defend.Click += new System.Windows.RoutedEventHandler(this.Defend_Click);
             
             #line default
@@ -377,7 +377,7 @@ namespace DungeonCrawler {
             case 18:
             this.Attack = ((System.Windows.Controls.Button)(target));
             
-            #line 43 "..\..\MainWindow.xaml"
+            #line 42 "..\..\MainWindow.xaml"
             this.Attack.Click += new System.Windows.RoutedEventHandler(this.Attack_Click);
             
             #line default
@@ -386,7 +386,7 @@ namespace DungeonCrawler {
             case 19:
             this.Spells = ((System.Windows.Controls.Button)(target));
             
-            #line 44 "..\..\MainWindow.xaml"
+            #line 43 "..\..\MainWindow.xaml"
             this.Spells.Click += new System.Windows.RoutedEventHandler(this.Eat_Click);
             
             #line default
@@ -395,7 +395,7 @@ namespace DungeonCrawler {
             case 20:
             this.HealthBar_Dungeon = ((System.Windows.Controls.ProgressBar)(target));
             
-            #line 45 "..\..\MainWindow.xaml"
+            #line 44 "..\..\MainWindow.xaml"
             this.HealthBar_Dungeon.ValueChanged += new System.Windows.RoutedPropertyChangedEventHandler<double>(this.HealthBar_ValueChanged);
             
             #line default
@@ -416,7 +416,7 @@ namespace DungeonCrawler {
             case 25:
             this.EnemyHealth1 = ((System.Windows.Controls.ProgressBar)(target));
             
-            #line 51 "..\..\MainWindow.xaml"
+            #line 50 "..\..\MainWindow.xaml"
             this.EnemyHealth1.ValueChanged += new System.Windows.RoutedPropertyChangedEventHandler<double>(this.EnemyHealth1_ValueChanged);
             
             #line default
@@ -434,7 +434,7 @@ namespace DungeonCrawler {
             case 29:
             this.Move_Out = ((System.Windows.Controls.Button)(target));
             
-            #line 66 "..\..\MainWindow.xaml"
+            #line 65 "..\..\MainWindow.xaml"
             this.Move_Out.Click += new System.Windows.RoutedEventHandler(this.Move_Out_Click);
             
             #line default
