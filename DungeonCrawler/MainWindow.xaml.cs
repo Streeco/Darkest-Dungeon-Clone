@@ -103,6 +103,7 @@ namespace DungeonCrawler
             Defend.Visibility = Visibility.Hidden;
             Spells.Visibility = Visibility.Hidden;
             Dungeon_Picture.Visibility = Visibility.Hidden;
+            Map.Visibility = Visibility.Hidden;
             UI_Frame.Visibility = Visibility.Hidden;
             UI_Text.Visibility = Visibility.Hidden;
             Skeleton_Text.Visibility = Visibility.Hidden;
@@ -120,6 +121,7 @@ namespace DungeonCrawler
             Defend.Visibility = Visibility.Visible;
             Spells.Visibility = Visibility.Visible;
             Dungeon_Picture.Visibility = Visibility.Visible;
+            Map.Visibility = Visibility.Visible;
             UI_Frame.Visibility = Visibility.Visible;
             UI_Text.Visibility = Visibility.Visible;
             Skeleton_Text.Visibility = Visibility.Visible;
