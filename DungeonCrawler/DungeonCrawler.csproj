@@ -139,5 +139,14 @@
     <Resource Include="Photos\Map\Page2.JPG" />
     <Resource Include="Photos\Map\Page3.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photos\Menu_Frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photos\ArcaneBarrage.png" />
+    <Resource Include="Photos\EarthQuake.png" />
+    <Resource Include="Photos\Fireball.png" />
+    <Resource Include="Photos\IceSpear.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
