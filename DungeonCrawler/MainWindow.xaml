@@ -18,35 +18,53 @@
                 <ImageBrush ImageSource="Photos/Parchment 0.5 (Fixed Sides).png"/>
             </TextBlock.Background>
         </TextBlock>
-        <Button x:Name="ExitButton" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="27" Margin="757,10,0,0" Click="Button_Click_1" Panel.ZIndex="2" Visibility="Hidden">
+        <Button x:Name="ExitButton" Content="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="33" Margin="751,10,0,0" Click="Button_Click_1" Panel.ZIndex="2" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Photos/Exit_Button.png" Stretch="Uniform"/>
             </Button.Background>
         </Button>
-        <Image x:Name="Hub_Background" HorizontalAlignment="Left" Height="713" Margin="-1,-9,0,-3.2" VerticalAlignment="Top" Width="801" Source="Photos/DarkValley.jpg" Stretch="Fill"/>
-        <Button Content="Shop" HorizontalAlignment="Left" Margin="229,365,0,0" VerticalAlignment="Top" Width="44" Click="Shop_Click" Background="#FF4F4F4F" Foreground="White"/>
-        <Button Content="Eat" HorizontalAlignment="Left" Margin="306,250,0,0" VerticalAlignment="Top" Width="32" Click="Eat_Click" Background="#FF4F4F4F" Foreground="White"/>
+        <Image x:Name="Hub_Background" HorizontalAlignment="Left" Height="713" Margin="-1,-9,0,-3.2" VerticalAlignment="Top" Width="801" Source="Photos/DarkValley.jpg" Stretch="Fill" Panel.ZIndex="-7"/>
+        <Button x:Name="Shop" Content="Shop" HorizontalAlignment="Left" Margin="229,365,0,0" VerticalAlignment="Top" Width="44" Click="Shop_Click" Background="#FF4F4F4F" Foreground="White" Panel.ZIndex="-1"/>
+        <Button x:Name="Eat" Content="Eat" HorizontalAlignment="Left" Margin="306,250,0,0" VerticalAlignment="Top" Width="32" Click="Eat_Click" Background="#FF4F4F4F" Foreground="White" Panel.ZIndex="-1"/>
         <Button Content="Move Out" HorizontalAlignment="Left" Margin="483,350,0,330.8" VerticalAlignment="Center" Width="75" Click="Move_Out_Click" Background="#FF4F4F4F" Foreground="White"/>
         <Label Content="Health" HorizontalAlignment="Left" Margin="50,8,0,0" VerticalAlignment="Top"/>
-        <Label Content="Stamina" HorizontalAlignment="Left" Margin="46,23,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Currency" Content="Money Counter" HorizontalAlignment="Left" Margin="25,55,0,0" VerticalAlignment="Top" Width="99" Background="{x:Null}" Foreground="White"/>
+        <Label x:Name="Currency" Content="Money Counter" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="99" Background="{x:Null}" Foreground="White" Panel.ZIndex="10"/>
         <Rectangle x:Name="ShopWindow" HorizontalAlignment="Left" Height="329" Margin="148,135,0,0" VerticalAlignment="Top" Width="446" Stroke="Black" Fill="#FF454545" Visibility="Hidden"/>
         <Button x:Name="ExitShop" Content="Button" HorizontalAlignment="Left" Margin="566,143,0,0" VerticalAlignment="Top" Width="18" Foreground="{x:Null}" BorderBrush="Black" Background="Red" Height="16" Click="ExitShop_Click" Visibility="Hidden"/>
-        <Image x:Name="Potion" HorizontalAlignment="Left" Height="23" Margin="136,17,0,0" VerticalAlignment="Top" Width="23" Source="Photos/Potion.png" OpacityMask="Black"/>
-        <Label x:Name="PotionCounter" Content="Potion Counter" HorizontalAlignment="Left" Margin="159,17,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="PotionCounter" Content="Potion Counter" HorizontalAlignment="Left" Margin="159,11,0,0" VerticalAlignment="Top" Foreground="White" Panel.ZIndex="10"/>
         <Button x:Name="BuyPotion" Content="Buy Potion" HorizontalAlignment="Left" Margin="323,250,0,0" VerticalAlignment="Top" Width="75" Click="BuyPotion_Click" Visibility="Hidden"/>
         <Label x:Name="BuyPotionText" Content="(20 Gold)" HorizontalAlignment="Left" Margin="330,269,0,0" VerticalAlignment="Top" Foreground="White" Visibility="Hidden"/>
-        <Image x:Name="Dungeon_Picture" HorizontalAlignment="Left" Height="436" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" Source="Photos/Dungeon.png" Stretch="Fill" Visibility="Hidden"/>
-        <Button x:Name="Defend" Content="Defend" HorizontalAlignment="Left" Margin="165,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Defend_Click" Panel.ZIndex="1" Visibility="Hidden"/>
-        <Button x:Name="Attack" Content="Attack" HorizontalAlignment="Left" Margin="46,554,0,0" VerticalAlignment="Top" Width="75" Height="37" BorderBrush="#FF656565" Foreground="Black" Background="{DynamicResource {x:Static SystemColors.MenuBarBrushKey}}" FontWeight="Bold" Click="Attack_Click" Panel.ZIndex="1" Visibility="Hidden"/>
-        <Button x:Name="Spells" Content="Spells" HorizontalAlignment="Left" Margin="283,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Eat_Click" Panel.ZIndex="1" Visibility="Hidden"/>
-        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,8,0,0" VerticalAlignment="Top" Width="100" Value="101" ValueChanged="HealthBar_ValueChanged"/>
+        <Image x:Name="Dungeon_Picture" HorizontalAlignment="Left" Height="438" Margin="10,8,0,0" VerticalAlignment="Top" Width="774" Source="Photos/Dungeon.png" Stretch="Fill" Panel.ZIndex="-1" Visibility="Hidden"/>
+        <Button x:Name="Item" Content="Items" HorizontalAlignment="Left" Margin="165,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Panel.ZIndex="1" Click="Items_Click" Visibility="Hidden">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF42B765" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Attack" Content="Attack" HorizontalAlignment="Left" Margin="46,554,0,0" VerticalAlignment="Top" Width="75" Height="37" BorderBrush="#FF656565" Foreground="Black" FontWeight="Bold" Click="Attack_Click" Panel.ZIndex="1" Visibility="Hidden">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFB34B4B" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Spells" Content="Spells" HorizontalAlignment="Left" Margin="283,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Click="Spells_Click" Panel.ZIndex="1" Visibility="Hidden">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF4F84FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ProgressBar x:Name="HealthBar" HorizontalAlignment="Left" Height="10" Margin="24,8,0,0" VerticalAlignment="Top" Width="100" Value="101" ValueChanged="HealthBar_ValueChanged" Background="{x:Null}"/>
         <Image x:Name="Health_Cross" HorizontalAlignment="Left" Height="21" Margin="9,4,0,0" VerticalAlignment="Top" Width="19" Source="Photos/Health_Cross.png" Stretch="Fill" RenderTransformOrigin="0.116,1.21"/>
         <Label x:Name="Health_Text" Content="Health" HorizontalAlignment="Left" Margin="50,01,0,0" VerticalAlignment="Top"/>
         <Label x:Name="Magic_Text" Content="Mana" HorizontalAlignment="Left" Margin="50,11,0,0" VerticalAlignment="Top" Panel.ZIndex="1" Height="25" Width="40"/>
-        <Image HorizontalAlignment="Left" Height="209" Margin="395,451,0,0" VerticalAlignment="Top" Width="389" Grid.Column="123"/>
         <Label x:Name="Skeleton_Text" Content="Skeleton" HorizontalAlignment="Left" Margin="653,0,0,0" VerticalAlignment="Top" Height="27" Panel.ZIndex="1" Visibility="Hidden"/>
-        <ProgressBar x:Name="EnemyHealth1" HorizontalAlignment="Left" Height="10" Margin="629,10,0,0" VerticalAlignment="Top" Width="100" Value="9" Maximum="9" ValueChanged="EnemyHealth1_ValueChanged" Visibility="Hidden"/>
+        <ProgressBar x:Name="SkeletonHealth" HorizontalAlignment="Left" Height="10" Margin="629,10,0,0" VerticalAlignment="Top" Width="100" Value="9" Maximum="9" ValueChanged="SkeletonHealth_ValueChanged" Visibility="Hidden" Background="{x:Null}"/>
         <Image x:Name="UI_Frame" HorizontalAlignment="Left" Height="229" VerticalAlignment="Top" Width="395" Margin="0,442,0,-4.6" Source="Photos/UI Frame (1).png" Stretch="Fill" Visibility="Hidden"/>
         <Label x:Name="UI_Text" Content="Command Panel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,457,0,0" Width="285" FontWeight="Bold" FontStyle="Italic" FontSize="20" HorizontalContentAlignment="Center" Visibility="Hidden">
 
@@ -60,8 +78,137 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
-        <ProgressBar x:Name="MagicBar_Dungeon" HorizontalAlignment="Left" Height="10" Margin="24,19,0,0" VerticalAlignment="Top" Width="100" Background="#FF1747B7"/>
-        <Button x:Name="Move_Out" Content="Move Out" HorizontalAlignment="Left" Margin="463,330,0,0" VerticalAlignment="Top" Width="60" Foreground="White" Background="#FF4B4545" Click="Move_Out_Click"/>
+        <ProgressBar x:Name="ManaBar" HorizontalAlignment="Left" Height="10" Margin="24,19,0,0" VerticalAlignment="Top" Width="100" Background="{x:Null}" Value="101" Foreground="#FF2D45C5"/>
+        <Button x:Name="Move_Out" Content="Move Out" HorizontalAlignment="Left" Margin="463,330,0,0" VerticalAlignment="Top" Width="60" Foreground="White" Background="#FF4B4545" Click="Move_Out_Click" Panel.ZIndex="-2"/>
+        <Rectangle x:Name="Menu" HorizontalAlignment="Left" Height="401" Margin="80,114,0,0" VerticalAlignment="Top" Width="629" Visibility="Hidden" Panel.ZIndex="1">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Photos/Scroll.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="Exit_Menu" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="479" Margin="148,392,0,0" Height="54" Click="Exit_Menu_Click" Visibility="Hidden" Panel.ZIndex="2">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/Parchment 0.5 (Fixed Sides).png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Settings_Menu" Content="Settings" HorizontalAlignment="Left" VerticalAlignment="Top" Width="479" Margin="148,295,0,0" Height="54" Visibility="Hidden" Click="Settings_Click" Panel.ZIndex="2">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/Parchment 0.5 (Fixed Sides).png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Resume_Menu" Content="Resume" HorizontalAlignment="Left" VerticalAlignment="Top" Width="479" Margin="148,191,0,0" Height="54" Click="Resume_Menu_Click" Visibility="Hidden" Panel.ZIndex="2">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/Parchment 0.5 (Fixed Sides).png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Potion" Content="" HorizontalAlignment="Left" Margin="136,11,0,0" VerticalAlignment="Top" Width="18" BorderBrush="{x:Null}" Height="20" Foreground="Black" Click="Potion_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/Potion.png"/>
+            </Button.Background>
+        </Button>
+        <Slider x:Name="S_Slider" HorizontalAlignment="Left" Margin="283,269,0,0" VerticalAlignment="Top" Width="196" Maximum="100" Panel.ZIndex="1" Visibility="Hidden"/>
+        <Rectangle x:Name="Option" HorizontalAlignment="Left" Height="211" Margin="213,181,0,0" VerticalAlignment="Top" Width="336" Visibility="Hidden">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Photos/UI Frame (1).png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="Sound_Option" Content="Sound" HorizontalAlignment="Left" Margin="359,248,0,0" VerticalAlignment="Top" Foreground="#FF7A4747" FontWeight="Bold" FontStyle="Italic" Visibility="Hidden"/>
+        <Slider x:Name="M_Slider" HorizontalAlignment="Left" Margin="283,327,0,0" VerticalAlignment="Top" Width="196" Background="{x:Null}" Maximum="100" Value="-1" Visibility="Hidden"/>
+        <Label x:Name="Music_Option" Content="Music" HorizontalAlignment="Left" Margin="360,309,0,0" VerticalAlignment="Top" Foreground="#FF7A4747" FontWeight="Bold" FontStyle="Italic" Visibility="Hidden"/>
+        <Label x:Name="Text_Option" Content="Options" HorizontalAlignment="Left" Margin="241,196,0,0" VerticalAlignment="Top" Width="282" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold" Visibility="Hidden">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF794747" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Button x:Name="Exit_Option" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="14" Margin="516,242,0,0" Height="15" Click="Button_Click" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/Exit_Button.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Return" Content="Return" HorizontalAlignment="Left" Margin="24,36,0,0" VerticalAlignment="Top" Width="53" BorderBrush="{x:Null}" Click="Return_Button" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/Parchment 0.5 (Fixed Sides).png"/>
+            </Button.Background>
+        </Button>
+        <Rectangle x:Name="Spell_Menu1" HorizontalAlignment="Left" Height="256" Margin="136,109,0,0" VerticalAlignment="Top" Width="468" Visibility="Hidden">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FC1461E2" Offset="1"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="Spell_Menu2" Fill="#FF092442" HorizontalAlignment="Left" Height="309" Margin="105,83,0,0" VerticalAlignment="Top" Width="536" Panel.ZIndex="-1" Visibility="Hidden"/>
+        <Button x:Name="Fireball" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="44" Margin="229,143,0,0" Height="48" Click="Fireball_Click" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/Fireball.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Icespear" Content="" HorizontalAlignment="Left" Margin="463,143,0,0" VerticalAlignment="Top" Width="50" Height="48" Click="Icespear_Click" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/IceSpear.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ThunderStorm" Content="" HorizontalAlignment="Left" Margin="463,269,0,0" VerticalAlignment="Top" Width="50" Height="44" Click="ThunderStorm_Click" Visibility="Hidden" >
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/ArcaneBarrage.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Earthquake" Content="" HorizontalAlignment="Left" Margin="229,263,0,0" VerticalAlignment="Top" Width="44" Height="50" Click="Earthquake_Click" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="Photos/EarthQuake.png"/>
+            </Button.Background>
+        </Button>
+        <ListBox x:Name="Inventory" HorizontalAlignment="Left" Height="235" Margin="255,114,0,0" VerticalAlignment="Top" Width="228" Visibility="Hidden">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFB94545" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+            <Button x:Name="PotionSwift" Content="Potion of Swiftness" FontWeight="Bold" FontStyle="Italic" Width="218" Height="40" Click="PotionSwift_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFE0DB2E" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="PotionTough" Content="Toughness Potion" FontWeight="Bold" FontStyle="Italic" Width="218" Height="40" Click="PotionTough_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF2CAD32" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="PotionMana" Content="Mana Potion" FontWeight="Bold" FontStyle="Italic" Height="40" Width="218" Click="PotionMana_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF44EEF1" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="EscapeRope" Content="Escape Rope" FontWeight="Bold" FontStyle="Italic" Height="40" Width="218" Click="EscapeRope_Click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFE20EE4" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </ListBox>
+        <ProgressBar x:Name="GiantSpiderHealth" HorizontalAlignment="Left" Height="10" Margin="629,10,0,0" VerticalAlignment="Top" Width="100" Value="16" Maximum="15" ValueChanged="GiantSpider_ValueChanged" Visibility="Hidden" Background="{x:Null}"/>
+        <Label x:Name="GiantSpiderText" Content="Giant Spider" HorizontalAlignment="Left" Margin="643,1,0,0" VerticalAlignment="Top" Height="27" Panel.ZIndex="1" Visibility="Hidden"/>
+        <Label x:Name="GhoulText" Content="Ghoul" HorizontalAlignment="Left" Margin="658,1,0,0" VerticalAlignment="Top" Height="27" Panel.ZIndex="1" Visibility="Hidden"/>
+        <ProgressBar x:Name="GhoulHealth" HorizontalAlignment="Left" Height="10" Margin="629,11,0,0" VerticalAlignment="Top" Width="100" Value="20" Maximum="20" ValueChanged="GhoulHealth_ValueChanged" Visibility="Hidden" Background="{x:Null}"/>
+        <Label x:Name="Score" Content="Score:" HorizontalAlignment="Left" Margin="9,74,0,0" VerticalAlignment="Top" Width="99" Background="{x:Null}" Foreground="White" Panel.ZIndex="10"/>
     </Grid>
 
 </Window>
