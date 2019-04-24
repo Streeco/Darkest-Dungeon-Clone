@@ -68,3 +68,6 @@ C:\Users\Streeco\source\repos\Darkest_Dungeon_Clone\Darkest-Dungeon-Clone\Dungeo
 C:\Users\Streeco\source\repos\Darkest_Dungeon_Clone\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.Properties.Resources.resources
 C:\Users\Streeco\source\repos\Darkest_Dungeon_Clone\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.GenerateResource.cache
 C:\Users\Streeco\source\repos\Darkest_Dungeon_Clone\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.CoreCompileInputs.cache
+C:\Users\Streeco\source\repos\Darkest_Dungeon_Clone\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\Database.mdf
+C:\Users\Streeco\source\repos\Darkest_Dungeon_Clone\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\Database_log.ldf
+C:\Users\Streeco\source\repos\Darkest_Dungeon_Clone\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler_Content.g.cs
