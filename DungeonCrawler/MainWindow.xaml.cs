@@ -46,7 +46,7 @@ namespace DungeonCrawler
         public MainWindow()
         {
             InitializeComponent();
-            
+
             Currency.Content = "Gold: " + currency.ToString();
             PotionCounter.Content = "X " + potion.ToString();
             Score.Content = "Score =" + ScoreBoard.ToString();
@@ -63,13 +63,13 @@ namespace DungeonCrawler
         }
 
         //Exit button
-        private void Button_Click_1(object sender, RoutedEventArgs e) 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             ShowMenu();
         }
 
         //Attack button
-        public void Attack_Click(object sender, RoutedEventArgs e) 
+        public void Attack_Click(object sender, RoutedEventArgs e)
         {
             if (HealthBar.Value > 0)
             {
@@ -93,14 +93,14 @@ namespace DungeonCrawler
                     TextBox.Text = combatLog;
                     turnCount += oneTurn;
                 }
-            } 
-           
+            }
+
         }
 
         //Inventory(Items)
         private void Items_Click(object sender, RoutedEventArgs e)
         {
-            
+
             if (Inventory.IsVisible)
             {
                 Inventory.Visibility = Visibility.Hidden;
@@ -143,7 +143,7 @@ namespace DungeonCrawler
             {
                 ShowSpells();
             }
-            
+
 
         }
 
@@ -374,7 +374,7 @@ namespace DungeonCrawler
             }
         }
 
-        
+
         //------------------------------------------------------------------------------Hub--------------------------------------------------------------------\\
         private void Eat_Click(object sender, RoutedEventArgs e)
         {
@@ -400,12 +400,12 @@ namespace DungeonCrawler
                 currency -= 20;
                 PotionCounter.Content = "X " + potion.ToString();
                 Currency.Content = "Gold: " + currency.ToString();
-                
+
             }
 
         }
 
-        
+
 
         private void Move_Out_Click(object sender, RoutedEventArgs e)
         {
@@ -434,7 +434,7 @@ namespace DungeonCrawler
                     PotionCounter.Content = "X " + potion.ToString();
                 }
             }
-            
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -473,7 +473,7 @@ namespace DungeonCrawler
             S_Slider.Visibility = Visibility.Hidden;
             M_Slider.Visibility = Visibility.Hidden;
         }
-        
+
         //Show menu Window
         private void ShowMenu()
         {
@@ -492,7 +492,7 @@ namespace DungeonCrawler
             Exit_Menu.Visibility = Visibility.Hidden;
             Resume_Menu.Visibility = Visibility.Hidden;
         }
-        
+
         //Show shop window
         private void ShowShop()
         {
