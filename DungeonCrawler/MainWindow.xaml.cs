@@ -319,6 +319,8 @@ namespace DungeonCrawler
             GiantSpiderHealth.Visibility = Visibility.Hidden;
             GiantSpiderText.Visibility = Visibility.Hidden;
             SkeletonMonster.Visibility = Visibility.Hidden;
+            SpiderMonster.Visibility = Visibility.Hidden;
+            GhoulMonster.Visibility = Visibility.Hidden;
         }
 
         //Show dungeon window
