@@ -36,7 +36,7 @@ namespace DungeonCrawler
         private bool earthQuake = false;
         private bool thunderStorm = false;
         private string combatLog = "You dealt 1 dmg. Wauv you must feel good about yourself about now, huh.\n";
-        private string spellCastLog = "You dealt 3 dmg. WOOOAAAH TAHT WAS EPIC!!! \n";
+        private string spellCastLog = "You dealt 3 dmg. WOOOAAAH THAT WAS EPIC!!! \n";
         private string OutOfManaLog = "You are out of mana, this could be troublesome... \n)";
         private string deathLog = "Too Bad... Knew you didn't had it in ya anyways, so just give up \n";
         // Hub
@@ -50,7 +50,7 @@ namespace DungeonCrawler
 
             Currency.Content = "Gold: " + currency.ToString();
             PotionCounter.Content = "X " + potion.ToString();
-            Score.Content = "Score =" + ScoreBoard.ToString();
+            Score.Content = "Score = " + ScoreBoard.ToString();
 
             if (HealthBar.Value == 0)
             {
@@ -261,6 +261,7 @@ namespace DungeonCrawler
             GiantSpiderText.Visibility = Visibility.Visible;
             SkeletonHealth.Visibility = Visibility.Hidden;
             Skeleton_Text.Visibility = Visibility.Hidden;
+            SkeletonMonster.Visibility = Visibility.Hidden;
         }
 
         private void SlainGiantSpider()
@@ -315,6 +316,7 @@ namespace DungeonCrawler
             GhoulText.Visibility = Visibility.Hidden;
             GiantSpiderHealth.Visibility = Visibility.Hidden;
             GiantSpiderText.Visibility = Visibility.Hidden;
+            SkeletonMonster.Visibility = Visibility.Hidden;
         }
 
         //Show dungeon window
@@ -331,6 +333,7 @@ namespace DungeonCrawler
             Skeleton_Text.Visibility = Visibility.Visible;
             Move_Out.Visibility = Visibility.Hidden;
             Return.Visibility = Visibility.Visible;
+            SkeletonMonster.Visibility = Visibility.Visible;
         }
 
         //Show dungeon window
@@ -401,12 +404,8 @@ namespace DungeonCrawler
                 currency -= 20;
                 PotionCounter.Content = "X " + potion.ToString();
                 Currency.Content = "Gold: " + currency.ToString();
-
             }
-
         }
-
-
 
         private void Move_Out_Click(object sender, RoutedEventArgs e)
         {
@@ -416,7 +415,6 @@ namespace DungeonCrawler
         private void Resume_Menu_Click(object sender, RoutedEventArgs e)
         {
             HideMenu();
-
         }
 
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
@@ -441,7 +439,6 @@ namespace DungeonCrawler
         {
             ShowMenu();
             HideOption();
-
         }
 
         private void Settings_Click(object sender, RoutedEventArgs e)

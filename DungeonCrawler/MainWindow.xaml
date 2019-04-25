@@ -34,7 +34,7 @@
         <Label x:Name="PotionCounter" Content="Potion Counter" HorizontalAlignment="Left" Margin="159,11,0,0" VerticalAlignment="Top" Foreground="White" Panel.ZIndex="10"/>
         <Button x:Name="BuyPotion" Content="Buy Potion" HorizontalAlignment="Left" Margin="323,250,0,0" VerticalAlignment="Top" Width="75" Click="BuyPotion_Click" Visibility="Hidden"/>
         <Label x:Name="BuyPotionText" Content="(20 Gold)" HorizontalAlignment="Left" Margin="330,269,0,0" VerticalAlignment="Top" Foreground="White" Visibility="Hidden"/>
-        <Image x:Name="Dungeon_Picture" HorizontalAlignment="Left" Height="438" Margin="10,8,0,0" VerticalAlignment="Top" Width="774" Source="Photos/Dungeon.png" Stretch="Fill" Panel.ZIndex="-1" Visibility="Hidden"/>
+        <Image x:Name="Dungeon_Picture" HorizontalAlignment="Left" Height="455" Margin="-1,-9,-0.4,0" VerticalAlignment="Top" Width="795" Source="DungeonEntrance.png" Stretch="Fill" Panel.ZIndex="-1" RenderTransformOrigin="0.48,0.784" Visibility="Hidden"/>
         <Button x:Name="Item" Content="Items" HorizontalAlignment="Left" Margin="165,554,0,0" VerticalAlignment="Top" Width="75" Height="37" FontWeight="Bold" Panel.ZIndex="1" Click="Items_Click" Visibility="Hidden">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -209,6 +209,7 @@
         <Label x:Name="GhoulText" Content="Ghoul" HorizontalAlignment="Left" Margin="658,1,0,0" VerticalAlignment="Top" Height="27" Panel.ZIndex="1" Visibility="Hidden"/>
         <ProgressBar x:Name="GhoulHealth" HorizontalAlignment="Left" Height="10" Margin="629,11,0,0" VerticalAlignment="Top" Width="100" Value="20" Maximum="20" ValueChanged="GhoulHealth_ValueChanged" Visibility="Hidden" Background="{x:Null}"/>
         <Label x:Name="Score" Content="Score:" HorizontalAlignment="Left" Margin="9,74,0,0" VerticalAlignment="Top" Width="99" Background="{x:Null}" Foreground="White" Panel.ZIndex="10"/>
+        <Image x:Name="SkeletonMonster" HorizontalAlignment="Left" Height="206" Margin="566,121,0,0" VerticalAlignment="Top" Width="206" Source="Photos/Cloaked Skeleton.png" Visibility="Hidden"/>
     </Grid>
 
 </Window>
