@@ -43,10 +43,6 @@ C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawle
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.CoreCompileInputs.cache
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.exe
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.pdb
-D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.g.cs
-D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.baml
-D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.g.cs
-D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.baml
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.g.cs
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\ShopWindow.g.cs
 C:\Users\Streeco\source\repos\DungeonCrawler\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\MainHub.baml
@@ -96,3 +92,13 @@ C:\Users\Streeco\source\repos\DDC\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug
 C:\Users\Streeco\source\repos\DDC\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.CopyComplete
 C:\Users\Streeco\source\repos\DDC\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.exe
 C:\Users\Streeco\source\repos\DDC\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.pdb
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\EntityFramework.dll
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\System.Data.SQLite.dll
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\EntityFramework.xml
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\EntityFramework.SqlServer.xml
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\System.Data.SQLite.xml
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\System.Data.SQLite.dll.config
+D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.CopyComplete

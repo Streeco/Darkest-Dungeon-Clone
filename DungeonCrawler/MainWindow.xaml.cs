@@ -401,12 +401,8 @@ namespace DungeonCrawler
                 currency -= 20;
                 PotionCounter.Content = "X " + potion.ToString();
                 Currency.Content = "Gold: " + currency.ToString();
-
             }
-
         }
-
-
 
         private void Move_Out_Click(object sender, RoutedEventArgs e)
         {
@@ -435,46 +431,12 @@ namespace DungeonCrawler
                     PotionCounter.Content = "X " + potion.ToString();
                 }
             }
-
-        }
-
-
-
-        private void Move_Out_Click(object sender, RoutedEventArgs e)
-        {
-            GoIntoDungeon();
-        }
-
-        private void Resume_Menu_Click(object sender, RoutedEventArgs e)
-        {
-            HideMenu();
-
-        }
-
-        private void Exit_Menu_Click(object sender, RoutedEventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
-        private void Potion_Click(object sender, RoutedEventArgs e)
-        {
-            if (potion > 0)
-            {
-                if (HealthBar.Value < 100)
-                {
-                    HealthBar.Value += 20;
-                    potion--;
-                    PotionCounter.Content = "X " + potion.ToString();
-                }
-            }
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ShowMenu();
             HideOption();
-
         }
 
         private void Settings_Click(object sender, RoutedEventArgs e)
