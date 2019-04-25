@@ -210,6 +210,8 @@
         <ProgressBar x:Name="GhoulHealth" HorizontalAlignment="Left" Height="10" Margin="629,11,0,0" VerticalAlignment="Top" Width="100" Value="20" Maximum="20" ValueChanged="GhoulHealth_ValueChanged" Visibility="Hidden" Background="{x:Null}"/>
         <Label x:Name="Score" Content="Score:" HorizontalAlignment="Left" Margin="9,74,0,0" VerticalAlignment="Top" Width="99" Background="{x:Null}" Foreground="White" Panel.ZIndex="10"/>
         <Image x:Name="SkeletonMonster" HorizontalAlignment="Left" Height="206" Margin="566,121,0,0" VerticalAlignment="Top" Width="206" Source="Photos/Cloaked Skeleton.png" Visibility="Hidden"/>
+        <Image x:Name="SpiderMonster" HorizontalAlignment="Left" Height="144" Margin="479,181,0,0" VerticalAlignment="Top" Width="144" Source="Photos/PurpleSpider.png" Visibility="Hidden"/>
+        <Image x:Name="GhoulMonster" HorizontalAlignment="Left" Height="213" Margin="463,127,0,0" VerticalAlignment="Top" Width="213" Source="Photos/Ghoul.png" Visibility="Hidden"/>
     </Grid>
 
 </Window>

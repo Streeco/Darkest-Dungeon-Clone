@@ -173,8 +173,6 @@ namespace DungeonCrawler
                     TextBox.Text = spellCastLog;
                     ManaBar.Value -= fsc;
                     HideSpells();
-
-
                 }
 
                 if (GiantSpiderHealth.IsVisible)
@@ -252,6 +250,7 @@ namespace DungeonCrawler
                 currency += 12;
                 Score.Content = "Score =" + ScoreBoard.ToString();
                 Currency.Content = "Gold: " + currency.ToString();
+                GhoulMonster.Visibility = Visibility.Hidden;
             }
         }
 
@@ -262,6 +261,7 @@ namespace DungeonCrawler
             SkeletonHealth.Visibility = Visibility.Hidden;
             Skeleton_Text.Visibility = Visibility.Hidden;
             SkeletonMonster.Visibility = Visibility.Hidden;
+            SpiderMonster.Visibility = Visibility.Visible;
         }
 
         private void SlainGiantSpider()
@@ -270,6 +270,8 @@ namespace DungeonCrawler
             GhoulText.Visibility = Visibility.Visible;
             GiantSpiderHealth.Visibility = Visibility.Hidden;
             GiantSpiderText.Visibility = Visibility.Hidden;
+            SpiderMonster.Visibility = Visibility.Hidden;
+            GhoulMonster.Visibility = Visibility.Visible;
         }
 
         //Player
