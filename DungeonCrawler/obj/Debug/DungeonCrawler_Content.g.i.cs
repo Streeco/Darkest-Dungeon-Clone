@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("lss/lss.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("lss/lss_log.ldf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("photos/ghoul.png")]
-
-
