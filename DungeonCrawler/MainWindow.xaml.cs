@@ -12,7 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data.Sql;
+using System.Data.SQLite;
+using System.Data;
+using System.Data.SqlClient;
+
 
 namespace DungeonCrawler
 {
@@ -512,6 +515,68 @@ namespace DungeonCrawler
 
         //----------------------------------------------------------MVC PATTERN-------------------------------------------------\\
 
+        //Model Class
+
+
+        String query = "SELECT COUNT(1) FROM LogIn WHERE Username=@Username AND Password=@Password";
+        String query1 = "SELECT COUNT(2) FROM LogIn WHERE Username=@Username AND Password=@Password";
+        String query2 = "SELECT COUNT(3) FROM LogIn WHERE Username=@Username AND Password=@Password";
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            string cn_String = Properties.Settings.Default.connection_String;
+            SqlConnection sqlCon = new SqlConnection(cn_String);
+            try
+            {
+                if (sqlCon.State == ConnectionState.Closed)
+                {
+                    sqlCon.Open();
+                }
+                //Peter Log in
+                SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
+                sqlCmd.CommandType = CommandType.Text;
+                sqlCmd.Parameters.AddWithValue("@Username", Username.Text);
+                sqlCmd.Parameters.AddWithValue("@Password", Password.Text);
+                //Alex Log in
+                SqlCommand sqlCmd1 = new SqlCommand(query1, sqlCon);
+                sqlCmd1.CommandType = CommandType.Text;
+                sqlCmd1.Parameters.AddWithValue("@Username", Username.Text);
+                sqlCmd1.Parameters.AddWithValue("@Password", Password.Text);
+                //Bülow Log in
+                SqlCommand sqlCmd2 = new SqlCommand(query2, sqlCon);
+                sqlCmd2.CommandType = CommandType.Text;
+                sqlCmd2.Parameters.AddWithValue("@Username", Username.Text);
+                sqlCmd2.Parameters.AddWithValue("@Password", Password.Text);
+
+                int sqlCount = Convert.ToInt32(sqlCmd.ExecuteScalar());
+                int sqlCount1 = Convert.ToInt32(sqlCmd1.ExecuteScalar());
+                int sqlCount2 = Convert.ToInt32(sqlCmd2.ExecuteScalar());
+
+                if (sqlCount == 1 || sqlCount == 2 || sqlCount == 3)
+                {
+                    LogInBackground.Visibility = Visibility.Hidden;
+                    LogInForeground.Visibility = Visibility.Hidden;
+                    Password.Visibility = Visibility.Hidden;
+                    Password_Txt.Visibility = Visibility.Hidden;
+                    Username.Visibility = Visibility.Hidden;
+                    Username_Txt.Visibility = Visibility.Hidden;
+                    Login_Txt.Visibility = Visibility.Hidden;
+                    LogInButton.Visibility = Visibility.Hidden;
+                }
+                else
+                {
+                    MessageBox.Show("Username or Password is incorrect!");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlCon.Close();
+            }
+        }
 
     }
 }

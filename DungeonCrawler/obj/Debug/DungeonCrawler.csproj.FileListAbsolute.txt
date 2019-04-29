@@ -102,3 +102,6 @@ D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\EntityF
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\System.Data.SQLite.xml
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\System.Data.SQLite.dll.config
 D:\Visual Studio Projects\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler.csproj.CopyComplete
+C:\Users\Streeco\source\repos\DDC\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\LSS\LSS.mdf
+C:\Users\Streeco\source\repos\DDC\Darkest-Dungeon-Clone\DungeonCrawler\bin\Debug\LSS\LSS_log.ldf
+C:\Users\Streeco\source\repos\DDC\Darkest-Dungeon-Clone\DungeonCrawler\obj\Debug\DungeonCrawler_Content.g.cs
